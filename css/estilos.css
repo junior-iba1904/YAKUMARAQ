@@ -1,0 +1,340 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	text-decoration: none;
+}
+
+html{
+    scroll-behavior: smooth;
+    scroll-padding: 5.5rem;
+}
+
+/*barra menu*/
+
+.barra{
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    transition: 0.7s;
+}
+
+.navbar{
+    padding: 0;
+}
+
+.logo img{
+    height: 80px;
+    width: 300px;
+    cursor: pointer;
+}
+
+.barra.abajo{
+    background-color: white;
+    transition: 0.7s;
+    box-shadow: 1px 1px 1px black;
+}
+
+.navbar-nav li{
+    margin-right: 80px;
+    letter-spacing: 0.5px;
+    text-decoration: none;
+    position: relative;
+    padding: 0 5px;
+}
+
+.navbar-collapse a:after{
+    content: "";
+    position: absolute;
+    background-color: #5bd9bb;
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: 5px;
+    transition: 0.3s;
+}
+
+.navbar-collapse a:hover:after{
+    width: 100%;
+}
+
+
+/*cuerpo*/
+
+.cuerpo{
+    position: relative;
+    height: 2700px;
+    overflow: hidden;
+}
+
+.container1{
+    height: 28%;
+}
+
+.container1 img{
+    height: 100%;
+    width: 100%;
+}
+
+section{
+    display: grid;
+}
+
+/*MISION*/
+
+.Mision{
+    margin-top: 100px;
+    background-color: #5bd9bb;
+    padding: 30px;
+    margin-right: 50%;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.Mision p{
+    margin: 0;
+    font-size: 25px;
+}
+
+.Mision_text{
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.Mision_text .text{
+    font-size: 30px;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.port1 img{
+    display: block;
+    margin: auto;
+    width: 60%;
+    height: 70%;
+}
+
+/*VISION*/
+.container3{
+    background-color: #5bd9bb;
+}
+
+.Vision{
+    background-color: white;
+    padding: 30px;
+    margin-left: 50%;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    margin-top: 50px;
+}
+
+.Vision p{
+    margin: 0;
+    font-size: 25px;
+}
+
+.Vision_text{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.Vision_text .text{
+    font-size: 30px;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.port2 img{
+    display: block;
+    margin: auto;
+    width: 55%;
+    height: 85%; 
+}
+
+/*que somos*/
+.container4{
+    margin-top: 50px;
+    text-align: center;
+    font-size: 30px;
+    color: #5bd9bb;
+}
+
+.somos{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 5rem;
+}
+
+.somos video{
+    margin: auto;
+    width: 900px;
+    height: 500px;
+}
+
+/*footer*/
+footer{
+    background-color: #5bd9bb;
+    height: 150px;
+    text-align: center;
+}
+
+footer p{
+    margin-top: 50px;
+    padding-top: 30px;
+}
+
+footer ul{
+    margin-top: 30px;
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+footer ul li{
+    display: inline-block;
+    justify-content:space-around;
+}
+
+footer ul li i{
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+/*MOVIL*/
+@media (max-width:540px){
+    html{
+        scroll-padding: 4rem;
+    }
+
+    section{
+        height: 660px;
+    }
+
+    .container1{
+        width: 900px;
+        margin-left: -140px;
+    }
+
+    .logo img{
+        height: 60px;
+        width: 200px;
+    }
+
+    .barra{
+        background-color: white;
+    }
+    
+    .navbar-nav{
+        align-items: center;
+    }
+
+    .navbar-nav li{
+        margin-right: 0;
+    }
+
+    .Mision{
+        margin-top: 50px;
+        padding: 15px;
+    }
+
+    .Mision p{
+        font-size: 15px;
+    }
+
+    .Mision_text{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .Mision_text p{
+        font-size: 20px;
+    }
+
+    .Vision{
+        margin-top: 20px;
+        padding: 15px;
+    }
+
+    .Vision_text{
+        grid-template-columns: repeat(1, 1fr);
+        margin-top: 50px;
+    }
+
+    .Vision p{
+        font-size: 15px;
+    }
+
+    .Vision_text p{
+        font-size: 20px;
+        margin-top: -30px;
+    }
+
+    .Vision_text img{
+        margin-top: 20px;
+    }
+
+    .port2 img{
+        width: 45%;
+    }
+
+    .somos{
+        gap: 0;
+    }
+
+    .somos video{
+        width: 70%;
+    }
+
+    footer{
+        font-size: 10px;
+    }
+
+    footer p{
+        margin-top: 0;
+    }
+}
+
+@media (max-width:414px){
+    .cuerpo{
+        height: 2900px;
+    }
+
+    .container1{
+        width: 1000px;
+        height: 900px;
+        margin-left: -170px;
+    }
+
+    .Mision_text{
+        height: 60%;
+    }
+
+    .Mision_text p{
+        font-size: 15px;
+    }
+
+    .Mision_text img{
+        width: 80%;
+        height: 80%;
+    }
+
+    .Vision_text{
+        height: 60%;
+    }
+
+    .Vision_text p{
+        margin: 0;
+        font-size: 15px;
+    }
+
+    .Vision_text img{
+        width: 80%;
+    }
+
+    .somos video{
+        width: 90%;
+        height: 400px;
+    }
+
+}
