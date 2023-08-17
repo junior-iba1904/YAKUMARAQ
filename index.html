@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/b44141ae9b.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="estilos\inicio.css">
+    <link rel="stylesheet" href="estilos\segunda_seccion.css">
+    <link rel="stylesheet" href="estilos\tercera_seccion.css">
+    <link rel="stylesheet" href="estilos\cuarta_seccion.css">
+    <link rel="stylesheet" href="estilos\quinta_seccion.css">
+    <title>Portafolio</title>
+</head>
+<body>
+    <!--BARRA DE MENU-->
+    <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                <a href="#">JUNIOR</a>
+            </div>
+
+            <nav id="nav">
+                <ul>
+                    <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+                    <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
+                    <li><a href="#skills" onclick="seleccionar()">HABILIDADES</a></li>
+                    <li><a href="#curriculum" onclick="seleccionar()">CURRICULUM</a></li>
+                    <li><a href="#actividades" onclick="seleccionar()">ACTIVIDADES</a></li>
+                </ul>
+            </nav>
+
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+    </div>
+    <!--PRIMERA SECCION-->
+    <section id="inicio" class="inicio">
+        <div class="contenedor-banner">
+            <div class="contenedor-img">
+                <img src="imagenes/FOTO-CV.jpeg" alt="">
+            </div>
+            <h1>JUNIOR IBAÑEZ</h1>
+            <h2>Estudiante de ingenieria de Sistemas e Informática</h2>
+            <div class="redes">
+                <a href="https://www.linkedin.com/in/junior-iba%C3%B1ez-009577236/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://github.com/junior-iba1904/junior-iba1904" target="_blank"><i class="fa-brands fa-github"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!--SEGUNDA SECCION-->
+    <section id="sobremi" class="sobremi">
+        <div class="contenedor-second">
+            <h2>Sobre Mi</h2>
+            <p><span>Hola, me llamo Ralph Junior Ibañez Chanamé, </span> y soy un Estudiante de la carrera de Ingeniería de Sistemas e 
+                informática de la Universidad Tecnológica del Perú, conozco y manejo el lenguaje de Java, HTML, CSS, Base de 
+                datos, Bootstrap y el idioma inglés a nivel básico. Mi objetivo es poner en practica todo lo que he aprendido 
+                hasta el momento , conocer más lenguajes de programación y ganar más experiencia.</p>
+
+            <div class="fila">
+            <!--datos personales-->
+            <div class="col">
+                <h3>Datos personales</h3>
+                <ul>
+                    <li>
+                        <strong>Cumpleaños</strong>
+                        04-06-2003
+                    </li>
+                    <li>
+                        <strong>Teléfono</strong>
+                        +51 944 422 426
+                    </li>
+                    <li>
+                        <strong>Email</strong>
+                        ibanezjunior59@gmail.com
+                    </li>
+                </ul>
+            </div>
+
+            <!--intereses-->
+            <div class="col">
+                <h3>Intereses</h3>
+                <div class="contenedor-intereses">
+                    <div class="intereses">
+                        <i class="fa-solid fa-gamepad"></i>
+                        <span>JUEGOS</span>
+                    </div>
+                    <div class="intereses">
+                        <i class="fa-solid fa-headphones"></i>
+                        <span>MUSICA</span>
+                    </div>
+                    <div class="intereses">
+                        <i class="fa-solid fa-bicycle"></i>
+                        <span>CICLISMO</span>
+                    </div>
+                    <div class="intereses">
+                        <i class="fa-solid fa-futbol"></i>
+                        <span>FUTBOL</span>
+                    </div>
+                    <div class="intereses">
+                        <i class="fa-solid fa-meteor"></i>
+                        <span>ASTRONOMIA</span>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+    </section>
+
+    <!--TERCERA SECCION-->
+    <section class="skills" id="skills">
+        <div class="contenedor-thirt">
+            <h2>SKILLS</h2>
+            <div class="fila">
+                <!--HABILIDADES TECNICAS-->
+                <div class="col">
+                    <h3>Habilidades tecnicas</h3>
+                    <div class="skill">
+                        <span>JAVASCRIPT</span>
+                        <div class="barra-skill">
+                            <div class="progreso javascript">
+                                <span>45%</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skill">
+                        <span>HTML & CSS</span>
+                        <div class="barra-skill">
+                            <div class="progreso htmlcss">
+                                <span>55%</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skill">
+                        <span>PYTHON</span>
+                        <div class="barra-skill">
+                            <div class="progreso python">
+                                <span>25%</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skill">
+                        <span>BASE DE DATOS</span>
+                        <div class="barra-skill">
+                            <div class="progreso base">
+                                <span>50%</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skill">
+                        <span>JAVA</span>
+                        <div class="barra-skill">
+                            <div class="progreso java">
+                                <span>65%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--HABILIDADES PERSONALES-->
+                <div class="col">
+                    <h3>Habilidades personales</h3>
+                    <div class="skill">
+                        <span>COMUNICACIÓN</span>
+                        <div class="barra-skill">
+                            <div class="progreso comunicacion">
+                                <span>65%</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skill">
+                        <span>TRABAJO EN EQUIPO</span>
+                        <div class="barra-skill">
+                            <div class="progreso group">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skill">
+                        <span>CREATIVIDAD</span>
+                        <div class="barra-skill">
+                            <div class="progreso creatividad">
+                                <span>50%</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skill">
+                        <span>PUNTUALIDAD</span>
+                        <div class="barra-skill">
+                            <div class="progreso puntualidad">
+                                <span>90%</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skill">
+                        <span>RESPONSABILIDAD</span>
+                        <div class="barra-skill">
+                            <div class="progreso respon">
+                                <span>85%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--CUARTA SECCION-->
+    <section class="curriculum" id="curriculum">
+        <div class="contenedor-four">
+            <h2>Curriculum</h2>
+            <div class="fila">
+                <div class="col izquierda">
+                    <h3>Educación</h3>
+                    <div class="item izq">
+                        <h4>Ingenieria de sistemas e informática</h4>
+                        <span class="lugar">Universidad Tecnológica del Perú</span>
+                        <span class="fecha">2020 - actualidad</span>
+                        <p>Llevo 3 años y medio estudiando en esta universidad, por un tiempo estudié de manera virtual por la pandemia,
+                            y recién en este año comencé a estudiar de manera presencial. En este primer periodo 2023 obtuve el quinto 
+                            superior de mi carrera.
+                        </p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>    
+                    </div>
+                </div>
+
+                <div class="col derecha">
+                    <h3>Experiencia de trabajo</h3>
+                    <div class="item der">
+                        <h4>Ninguno por el momento</h4>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                        </div>    
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--QUINTA SECCION-->
+    <section class="actividades" id="actividades">
+        <div class="contenedor-five">
+            <h2>ACTIVIDADES</h2>
+            <p>(son proyectos que estuve practicando)</p>
+            <div class="galeria">
+                <div class="actividad">
+                    <img src="imagenes/tienda.jpg">
+                    <a href="https://junior-iba1904.github.io/Hackaton/" target="_blank">
+                    <div class="overlay">
+                        <h3>Diseño Tienda - Básica</h3>
+                        <p>En proceso</p>
+                    </div>
+                    </a>
+                </div>
+
+                <div class="actividad">
+                    <img src="imagenes/anime.png">
+                    <a href="https://junior-iba1904.github.io/JRAnime/" target="_blank">
+                    <div class="overlay">
+                        <h3>Diseño Página anime</h3>
+                        <p>En proceso</p>
+                    </div>
+                    </a>
+                </div>
+
+                <div class="actividad">
+                    <img src="imagenes/yakumaraq.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Diseño Página estática</h3>
+                        <p>En proceso</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--FOOTER-->
+    <footer>
+        <a href="#inicio" class="arriba">
+            <i class="fa-solid fa-angles-up"></i>
+        </a>
+        <div class="redes">
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+        </div>
+    </footer>
+    <script src="javascript/script.js"></script>
+</body>
+</html>
